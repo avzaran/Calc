@@ -1,0 +1,35 @@
+body {
+    font-size: 25px;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.display{
+    border: 1px solid red;
+    min-width: 80%;
+}
+.display::before{
+    content: 'display:';
+    font-weight: bold;
+    
+}
+body button {
+    width: 45px;
+    height: 45px;
+}
+.buttons {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.operators{
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    display: flex;
+}
