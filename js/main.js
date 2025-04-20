@@ -53,7 +53,7 @@ operatorButtons.forEach(button => {
 });
 
 equallyButton.addEventListener('click', () => {
-    if (currentInput === ''  operation === null  pendingValue === null) return;
+    if (currentInput === '' || operation === null || pendingValue === null) return;
     
     const inputValue = Number(currentInput);
     const result = operate(pendingValue, operation, inputValue);
